@@ -4,7 +4,8 @@
   "main": "index.js",
   "author": "Lin Clark",
   "scripts": {
-    "start": "opener index.html"
+    "build-js": "browserify entry.js -o bundle.js",
+    "start": "npm run build-js && opener index.html"
   },
   "license": "MIT",
   "dependencies": {
@@ -12,6 +13,7 @@
     "angular-material": "linclark/bower-material"
   },
   "devDependencies": {
+    "browserify": "^9.0.3",
     "opener": "^1.4.0"
   }
 }

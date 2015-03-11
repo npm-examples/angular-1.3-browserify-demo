@@ -1,5 +1,7 @@
+var angular = require('angular');
+
 angular
-    .module('autocompleteDemo', ['ngMaterial'])
+    .module('autocompleteDemo', [require('angular-material')])
     .controller('DemoCtrl', DemoCtrl);
 function DemoCtrl ($timeout, $q) {
   var self = this;
