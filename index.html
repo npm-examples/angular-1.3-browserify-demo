@@ -1,0 +1,30 @@
+<!doctype html>
+<head>
+  <title>Using Browserify with Angular 1.3</title>
+  <link rel="stylesheet" href="./node_modules/angular-material/angular-material.css">
+</head>
+<body>
+  <!-- Angular Material Dependencies -->
+  <script src="./node_modules/angular/angular.js"></script>
+  <script src="./node_modules/angular-animate/angular-animate.js"></script>
+  <script src="./node_modules/angular-aria/angular-aria.js"></script>
+
+  <!-- Angular Material Javascript using RawGit to load directly from `bower-material/master` -->
+  <script src="./node_modules/angular-material/angular-material.js"></script>
+  <script src="entry.js"></script>
+
+  <div ng-app="autocompleteDemo" ng-controller="DemoCtrl as ctrl" layout="column">
+  <md-content class="md-padding" layout="column">
+    <md-autocomplete
+      md-selected-item="ctrl.selectedItem"
+      md-search-text="ctrl.searchText"
+      md-items="item in ctrl.querySearch(ctrl.searchText)"
+      md-item-text="item.display"
+      placeholder="What is your favorite US state?">
+      <span md-highlight-text="ctrl.searchText">{{item.display}}</span>
+    </md-autocomplete>
+    <p class="md-padding">Demo borrowed from the <a href="https://material.angularjs.org/#/demo/material.components.autocomplete">Angular Material Design</a> site.</p>
+  </md-content>
+</div>
+</body>
+</html>
