@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "author": "",
+  "author": "Lin Clark",
   "license": "MIT",
   "dependencies": {
     "angular": "^1.3.14",
