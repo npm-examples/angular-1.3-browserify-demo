@@ -2,7 +2,6 @@
   "name": "angular-1.3-browserify-demo",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "",
   "author": "Lin Clark",
   "scripts": {
     "start": "opener index.html"
