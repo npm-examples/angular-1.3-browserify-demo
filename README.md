@@ -1,3 +1,7 @@
+## Read the article
+
+[Using Angular’s new improved Browserify support](http://blog.npmjs.org/post/114584444410/using-angulars-new-improved-browserify-support)
+
 ## Run the example
 
 1. Clone this repo
