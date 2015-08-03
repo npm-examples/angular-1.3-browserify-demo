@@ -9,7 +9,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "angular": "^1.3.14",
+    "angular": "~1.3.14",
     "angular-material": "linclark/bower-material"
   },
   "devDependencies": {
